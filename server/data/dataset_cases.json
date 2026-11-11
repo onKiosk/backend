@@ -1,0 +1,4970 @@
+[
+ {
+  "id": "TR001",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "어 저기 따뜻한 아메리카노 레귤러 한 잔 부탁드립니다",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR002",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이스 카페라떼 라지로 두 잔 포장해 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카페라떼",
+     "quantity": 2,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR003",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "바닐라라떼 뜨거운 라지에 샷 하나 추가해줘",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "LARGE",
+     "options": {
+      "shot": 1,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR004",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "어... 카푸치노 따뜻한 레귤러로 연하게 마실게요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카푸치노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "LIGHT",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR005",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "바닐라라떼 아이스 라지로 얼음 적게 부탁해요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "LESS",
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR006",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "콜드브루 라지 하나요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "콜드브루",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "shot": 0,
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR007",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "초코라떼 따뜻한 라지 한 잔 주시겠어요?",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "초코라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "LARGE",
+     "options": {
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR008",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "녹차라떼 아이스 레귤러인데 우유를 두유로 바꿀 수 있나요?",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "녹차라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0,
+      "milk": "SOY"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR009",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "노란 고구마라떼 따뜻하고 작은 걸로 한 잔 부탁해요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "고구마라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR010",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "지금 쓸 수 있는 할인 쿠폰 화면 보여줘",
+  "target": {
+   "action": "open_coupon_list"
+  }
+ },
+ {
+  "id": "TR011",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "자몽에이드 레귤러 얼음 조금만 넣어줘",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "자몽에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR",
+     "options": {
+      "ice": "LESS",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR012",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "치즈케이크 두 개 담아주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "치즈케이크",
+     "quantity": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR013",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이스 아메리카노 라지 두 잔이랑 소금빵 하나 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "아메리카노",
+     "quantity": 2,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL"
+     }
+    },
+    {
+     "menu": "소금빵",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR014",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "딸기라떼 아이스 레귤러 한 잔하고 마카롱 세 개 부탁드립니다",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "딸기라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    },
+    {
+     "menu": "마카롱",
+     "quantity": 3
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR015",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아메리카노 한 잔 마시려는데 주문 넣어줄래?",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "아메리카노",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR016",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이스 카페라떼 하나 테이크아웃이요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "카페라떼",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR017",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "차가운 콜드브루 커피 한 잔 부탁해",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "콜드브루",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR018",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "초콜릿 들어간 카페모카 라지 사이즈 하나요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "카페모카",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR019",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "쓴 커피 말고 따뜻하고 달달한 음료 뭐가 있나요?",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "바닐라라떼",
+    "초코라떼"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR020",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "시원하고 상큼하게 마실 만한 음료 좀 알려주세요",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "자몽에이드",
+    "레몬에이드",
+    "청포도에이드"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR021",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR"
+    }
+   ]
+  },
+  "user_text": "지금까지 담긴 목록 화면에 띄워줘",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "TR022",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR"
+    }
+   ]
+  },
+  "user_text": "아메리카노를 라지 큰 잔으로 변경할게요",
+  "target": {
+   "action": "modify_cart",
+   "target": "아메리카노",
+   "changes": {
+    "size": "LARGE"
+   }
+  }
+ },
+ {
+  "id": "TR023",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카페라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ]
+  },
+  "user_text": "담아 둔 카페라떼를 차가운 아이스로 바꿔 주시겠어요?",
+  "target": {
+   "action": "modify_cart",
+   "target": "카페라떼",
+   "changes": {
+    "temperature": "ICE",
+    "ice": "NORMAL"
+   }
+  }
+ },
+ {
+  "id": "TR024",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카페라떼",
+     "quantity": 1
+    },
+    {
+     "menu": "티라미수",
+     "quantity": 1
+    }
+   ]
+  },
+  "user_text": "티라미수는 목록에서 빼줘",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "티라미수"
+  }
+ },
+ {
+  "id": "TR025",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "유자차",
+     "quantity": 1
+    },
+    {
+     "menu": "베이글",
+     "quantity": 2
+    }
+   ]
+  },
+  "user_text": "아이고 다 취소하고 처음부터 새로 할게요",
+  "target": {
+   "action": "reset_order"
+  }
+ },
+ {
+  "id": "TR026",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ]
+  },
+  "user_text": "이대로 계산하면 되는지 주문 내역 확인해줘요",
+  "target": {
+   "action": "confirm_order",
+   "summary_required": true
+  }
+ },
+ {
+  "id": "TR027",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "자몽에이드"
+   ]
+  },
+  "user_text": "시원한 자몽에이드 라지로 하나 마실게요",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "자몽에이드",
+   "alternatives": [
+    "레몬에이드",
+    "청포도에이드"
+   ]
+  }
+ },
+ {
+  "id": "TR028",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "pending_sold_out_item": "자몽에이드",
+   "offered_alternatives": [
+    "레몬에이드",
+    "청포도에이드"
+   ]
+  },
+  "user_text": "그럼 레몬에이드 아이스 라지로 주문할게요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "레몬에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR029",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "커피 종류 말고 차 음료 화면을 보여주시겠어요?",
+  "target": {
+   "action": "show_category",
+   "category": "NON_COFFEE"
+  }
+ },
+ {
+  "id": "TR030",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "신용카드로 계산하겠습니다",
+  "target": {
+   "action": "start_payment",
+   "method": "CARD"
+  }
+ },
+ {
+  "id": "TR031",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "휴대폰에 있는 삼성페이로 결제할게요",
+  "target": {
+   "action": "start_payment",
+   "method": "SAMSUNG_PAY"
+  }
+ },
+ {
+  "id": "TR032",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "기계 화면이 멈춰서 조작이 안 되네요. 직원분 좀 와주세요",
+  "target": {
+   "action": "call_staff",
+   "reason": "KIOSK_MALFUNCTION"
+  }
+ },
+ {
+  "id": "TR033",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "핸드폰 번호로 스탬프 적립하려고요",
+  "target": {
+   "action": "open_loyalty_input",
+   "input_mode": "KEYPAD"
+  }
+ },
+ {
+  "id": "TR034",
+  "split": "train_192",
+  "screen": "receipt_choice",
+  "context": {
+   "screen": "receipt_choice",
+   "payment_status": "approved"
+  },
+  "user_text": "영수증은 출력 안 할게요",
+  "target": {
+   "action": "set_receipt",
+   "print": false
+  }
+ },
+ {
+  "id": "TR035",
+  "split": "train_192",
+  "screen": "complete",
+  "context": {
+   "screen": "complete",
+   "payment_status": "approved",
+   "order_number": "A042",
+   "pickup": "VIBRATION_BELL"
+  },
+  "user_text": "계산 완료됐나요? 번호 좀 알려줘요",
+  "target": {
+   "action": "announce_order",
+   "order_number": "A042",
+   "pickup": "VIBRATION_BELL"
+  }
+ },
+ {
+  "id": "TR036",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "휠체어를 타고 있어서 위쪽 버튼에 손이 안 닿아요",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "LOWER_TOUCH"
+  }
+ },
+ {
+  "id": "TR037",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "글씨가 흐려서 잘 안 보이니 화면을 크고 선명하게 띄워주세요",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "HIGH_CONTRAST"
+  }
+ },
+ {
+  "id": "TR038",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "눈이 침침하니 주문 과정을 말소리로 안내받을 수 있을까요?",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "VOICE_GUIDE"
+  }
+ },
+ {
+  "id": "TR039",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "recognition_failure_count": 2
+  },
+  "user_text": "네? 다시 말해도 못 알아듣네요",
+  "target": {
+   "action": "call_staff",
+   "reason": "VOICE_RECOGNITION_FAILED_TWICE"
+  }
+ },
+ {
+  "id": "TR040",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "오늘 비 오는지 날씨 좀 알려줘",
+  "target": {
+   "action": "no_action",
+   "reason": "OUT_OF_DOMAIN"
+  }
+ },
+ {
+  "id": "TR041",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "저기... 아메리카노 따뜻한 걸로 작은 잔 하나 부탁합니다",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR042",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "그 저... 달콤하고 하얀 우유 들어간 바닐라라떼 따뜻하게 큰 잔으로 하나 줘요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "LARGE",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR043",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "카푸치노 뜨겁게 레귤러로 부탁해요. 속이 쓰려서 연하게 타주시면 좋겠어요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카푸치노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "LIGHT",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR044",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "나는 따뜻한 아메리카노 연하게 레귤러로 한 잔 하고, 손주는 아이스 초코라떼 라지 하나 줘요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "LIGHT"
+     }
+    },
+    {
+     "menu": "초코라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR045",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "새콤한 자몽에이드 레귤러로 얼음은 적게 넣어주세요. 이가 시려서요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "자몽에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR",
+     "options": {
+      "ice": "LESS",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR046",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 유자차 레귤러 한 잔하고 손주 먹을 소금빵 하나 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "유자차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    },
+    {
+     "menu": "소금빵",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR047",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "잠을 잘 못 자서 그러는데 카페인 없는 따뜻한 캐모마일 차 레귤러 한 잔요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "캐모마일",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR048",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 아메리카노 연하게 레귤러 하나하고, 시원한 자몽에이드 라지 한 잔 같이 담아주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "LIGHT"
+     }
+    },
+    {
+     "menu": "자몽에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR049",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "소금빵 세 개만 담아주세요, 복지관 분들이랑 나눠 먹게요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "소금빵",
+     "quantity": 3
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR050",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "어... 그 부드러운 카페라떼 한 잔만 주실래요?",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "카페라떼",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR051",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 카푸치노로 마실게요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "카푸치노",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR052",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "그 저기... 알갱이 씹히는 청포도에이드 하나 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "청포도에이드",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR053",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "달달한 카페모카 레귤러로 한 잔 부탁해요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "카페모카",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR054",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "향긋한 홍차 얼그레이 레귤러로 마실게요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "얼그레이",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR055",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "녹차라떼 차갑게 한 잔 마실 건데, 컵 크기는 어느 게 있어요?",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "녹차라떼",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR056",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "오후에 당 떨어질 때 먹을 만한 달달한 디저트 뭐가 있을까요",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "치즈케이크",
+    "마카롱"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR057",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "속이 좀 안 좋아서 그런데 자극적이지 않은 따뜻한 차 뭐가 좋아요",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "유자차",
+    "대추차"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR058",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "외래어 이름을 잘 몰라서 그러는데, 고소하고 부드러운 우유 음료 추천해 줄 수 있나요?",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "고구마라떼",
+    "초코라떼"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR059",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "산책하고 와서 더운데 시원하고 새콤한 거 뭐가 좋아요?",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "레몬에이드",
+    "자몽에이드"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR060",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "저녁이라 그러는데 카페인 없는 따뜻한 차 종류 알려줄래요?",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "캐모마일",
+    "대추차"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR061",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "유자차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "담아둔 목록 확인하게 장바구니 화면 좀 열어줘요",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "TR062",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1
+    },
+    {
+     "menu": "치즈케이크",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "화면에 제대로 담겼는지 불안한데 목록 좀 크게 띄워봐요",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "TR063",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "딸기라떼",
+     "quantity": 1
+    },
+    {
+     "menu": "소금빵",
+     "quantity": 3
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "일행 것까지 빠짐없이 다 담겼는지 확인 좀 해주세요",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "TR064",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "아까 담은 아메리카노 큰 컵으로 바꿔주세요. 손이 떨려서 잘못 눌렀네요",
+  "target": {
+   "action": "modify_cart",
+   "target": "아메리카노",
+   "changes": {
+    "size": "LARGE"
+   }
+  }
+ },
+ {
+  "id": "TR065",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카푸치노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "strength": "NORMAL"
+     }
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "카푸치노가 너무 진하면 속이 쓰려서요, 연하게 변경할 수 있나요?",
+  "target": {
+   "action": "modify_cart",
+   "target": "카푸치노",
+   "changes": {
+    "strength": "LIGHT"
+   }
+  }
+ },
+ {
+  "id": "TR066",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "초코라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "손이 시려서 그러는데 초코라떼 찬 거 말고 따뜻한 걸로 바꿀게요",
+  "target": {
+   "action": "modify_cart",
+   "target": "초코라떼",
+   "changes": {
+    "temperature": "HOT"
+   }
+  }
+ },
+ {
+  "id": "TR067",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카페라떼",
+     "quantity": 1
+    },
+    {
+     "menu": "마카롱",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "손이 빗맞아서 잘못 담겼나 봐요. 마카롱은 목록에서 빼줘요",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "마카롱"
+  }
+ },
+ {
+  "id": "TR068",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1
+    },
+    {
+     "menu": "아메리카노",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "아메리카노는 안 마실 테니 장바구니에서 빼주시겠어요?",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "아메리카노"
+  }
+ },
+ {
+  "id": "TR069",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1
+    },
+    {
+     "menu": "티라미수",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "담아둔 메뉴 중에 티라미수는 빼고 주문할게요. 그것만 취소해 줘요",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "티라미수"
+  }
+ },
+ {
+  "id": "TR070",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카페모카",
+     "quantity": 1
+    },
+    {
+     "menu": "소금빵",
+     "quantity": 2
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "아이고 너무 복잡하네, 그냥 처음부터 다시 할게요",
+  "target": {
+   "action": "reset_order"
+  }
+ },
+ {
+  "id": "TR071",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "얼그레이",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "뒤에 사람도 서 있고 너무 헷갈리니 그냥 다 지우고 새로 할게요",
+  "target": {
+   "action": "reset_order"
+  }
+ },
+ {
+  "id": "TR072",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "이렇게 주문하면 틀린 거 없나요? 읽어보고 확인해 주세요",
+  "target": {
+   "action": "confirm_order",
+   "summary_required": true
+  }
+ },
+ {
+  "id": "TR073",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1
+    },
+    {
+     "menu": "치즈케이크",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "주문한 거 빠짐없이 제대로 다 들어갔는지 한 번 더 확인해주세요",
+  "target": {
+   "action": "confirm_order",
+   "summary_required": true
+  }
+ },
+ {
+  "id": "TR074",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "고구마라떼"
+   ]
+  },
+  "user_text": "고구마라떼 따뜻한 레귤러로 하나 주세요",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "고구마라떼",
+   "alternatives": [
+    "초코라떼",
+    "딸기라떼"
+   ]
+  }
+ },
+ {
+  "id": "TR075",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "대추차"
+   ]
+  },
+  "user_text": "구수한 대추차 따뜻한 걸로 레귤러 한 잔 마실게요",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "대추차",
+   "alternatives": [
+    "유자차",
+    "캐모마일"
+   ]
+  }
+ },
+ {
+  "id": "TR076",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "마카롱"
+   ]
+  },
+  "user_text": "포장해 갈 마카롱 두 개 주세요",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "마카롱",
+   "alternatives": [
+    "초코쿠키",
+    "치즈케이크"
+   ]
+  }
+ },
+ {
+  "id": "TR077",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "차랑 같이 먹을 케이크나 빵 디저트는 어디서 볼 수 있어요?",
+  "target": {
+   "action": "show_category",
+   "category": "DESSERT"
+  }
+ },
+ {
+  "id": "TR078",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "저는 그냥 커피 종류부터 보고 싶은데 보여줄 수 있어요?",
+  "target": {
+   "action": "show_category",
+   "category": "COFFEE"
+  }
+ },
+ {
+  "id": "TR079",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "지갑에서 카드 꺼냈는데 신용카드로 계산할게요",
+  "target": {
+   "action": "start_payment",
+   "method": "CARD"
+  }
+ },
+ {
+  "id": "TR080",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "혹시 현금으로도 계산할 수 있나요?",
+  "target": {
+   "action": "start_payment",
+   "method": "CASH"
+  }
+ },
+ {
+  "id": "TR081",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "신용카드로 결제 진행해 주실래요?",
+  "target": {
+   "action": "start_payment",
+   "method": "CARD"
+  }
+ },
+ {
+  "id": "TR082",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "전화번호로 포인트 적립하는 화면 띄워줘요",
+  "target": {
+   "action": "open_loyalty_input",
+   "input_mode": "KEYPAD"
+  }
+ },
+ {
+  "id": "TR083",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "핸드폰 뒷자리만 누르면 적립된다는데 번호판 열어주세요",
+  "target": {
+   "action": "open_loyalty_input",
+   "input_mode": "LAST4_KEYPAD"
+  }
+ },
+ {
+  "id": "TR084",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "카카오톡으로 받은 쿠폰이 있는데 쓸 수 있는 게 있나 봐줄 수 있어요?",
+  "target": {
+   "action": "open_coupon_list"
+  }
+ },
+ {
+  "id": "TR085",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "할인 쿠폰 등록된 거 있나 쿠폰 목록 화면 좀 띄워주세요",
+  "target": {
+   "action": "open_coupon_list"
+  }
+ },
+ {
+  "id": "TR086",
+  "split": "train_192",
+  "screen": "receipt_choice",
+  "context": {
+   "screen": "receipt_choice",
+   "payment_status": "approved"
+  },
+  "user_text": "영수증 꼭 챙겨야 하니 종이로 뽑아주세요",
+  "target": {
+   "action": "set_receipt",
+   "print": true
+  }
+ },
+ {
+  "id": "TR087",
+  "split": "train_192",
+  "screen": "receipt_choice",
+  "context": {
+   "screen": "receipt_choice",
+   "payment_status": "approved"
+  },
+  "user_text": "종이 영수증은 필요 없으니 안 뽑아도 돼요",
+  "target": {
+   "action": "set_receipt",
+   "print": false
+  }
+ },
+ {
+  "id": "TR088",
+  "split": "train_192",
+  "screen": "complete",
+  "context": {
+   "screen": "complete",
+   "payment_status": "approved",
+   "order_number": "A015",
+   "pickup": "VIBRATION_BELL"
+  },
+  "user_text": "귀가 어두워서 못 들었는데 제 주문번호 다시 말해줄 수 있나요?",
+  "target": {
+   "action": "announce_order",
+   "order_number": "A015",
+   "pickup": "VIBRATION_BELL"
+  }
+ },
+ {
+  "id": "TR089",
+  "split": "train_192",
+  "screen": "complete",
+  "context": {
+   "screen": "complete",
+   "payment_status": "approved",
+   "order_number": "A016",
+   "pickup": "VIBRATION_BELL"
+  },
+  "user_text": "카드가 긁힌 것 같은데 제대로 결제된 건가요?",
+  "target": {
+   "action": "announce_order",
+   "order_number": "A016",
+   "pickup": "VIBRATION_BELL"
+  }
+ },
+ {
+  "id": "TR090",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "돋보기를 안 써서 글자가 안 보이는데 화면 글씨 좀 키워줄 수 있나요?",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "HIGH_CONTRAST"
+  }
+ },
+ {
+  "id": "TR091",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "안경을 집에 두고 왔어요. 색깔 진하고 큰 글씨 화면으로 바꿔주세요",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "HIGH_CONTRAST"
+  }
+ },
+ {
+  "id": "TR092",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "눈이 침침해서 그러는데 버튼 누를 때마다 말로 설명해 줄 수 있어요?",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "VOICE_GUIDE"
+  }
+ },
+ {
+  "id": "TR093",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "기계 다루기가 너무 어려워서 그러는데 직원분 좀 불러주시겠어요?",
+  "target": {
+   "action": "call_staff",
+   "reason": "USER_REQUESTED_ASSISTANCE"
+  }
+ },
+ {
+  "id": "TR094",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "뒤에 사람들 기다려서 눈치 보이는데 사람 직원 좀 불러줘요",
+  "target": {
+   "action": "call_staff",
+   "reason": "USER_REQUESTED_ASSISTANCE"
+  }
+ },
+ {
+  "id": "TR095",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "recognition_failure_count": 2
+  },
+  "user_text": "네? 자꾸 못 알아들으시네, 아무래도 사람이 도와줘야겠어요",
+  "target": {
+   "action": "call_staff",
+   "reason": "VOICE_RECOGNITION_FAILED_TWICE"
+  }
+ },
+ {
+  "id": "TR096",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이고 오늘 복지관 친구가 올 때가 됐는데 아직이네",
+  "target": {
+   "action": "no_action",
+   "reason": "NO_COMMAND"
+  }
+ },
+ {
+  "id": "TR097",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "속이 쓰려서 그러는데 따뜻한 카푸치노 레귤러로 연하게 한 잔 해줘요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카푸치노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "LIGHT",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR098",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이스 바닐라라떼 큰 걸로 한 잔 테이크아웃 부탁합니다",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR099",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "목이 칼칼해서 그러는데 따뜻한 유자차 큰 잔으로 한 잔 줘요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "유자차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "LARGE",
+     "options": {}
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR100",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "시원한 콜드브루 레귤러 사이즈로 한 잔 부탁합니다",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "콜드브루",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR",
+     "options": {
+      "ice": "NORMAL",
+      "shot": 0,
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR101",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "속 든든하게 따뜻한 대추차 보통 잔으로 한 잔 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "대추차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR102",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이스 카페모카 라지 잔에 샷 하나 추가해서 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카페모카",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "shot": 1,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR103",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "시원한 복숭아 아이스티 라지로 얼음 많이 넣어주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "복숭아 아이스티",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "MORE",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR104",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 카페라떼 작은 거 한 잔인데 우유를 두유로 바꿔줄 수 있어요?",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카페라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "SOY"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR105",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "상큼한 레몬에이드 시원하게 라지 한 잔 포장할게요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "레몬에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR106",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "부드러운 치즈케이크 한 조각 담아주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "치즈케이크",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR107",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "나는 따뜻한 아메리카노 연하게 레귤러 한 잔 하고, 우리 손주는 시원한 초코라떼 큰 거 하나 줘요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "LIGHT"
+     }
+    },
+    {
+     "menu": "초코라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR108",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "속 편하게 따뜻한 캐모마일 레귤러 하나하고 시원한 딸기라떼 라지 하나 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "캐모마일",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    },
+    {
+     "menu": "딸기라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR109",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 카페라떼 작은 거 한 잔이랑 같이 먹을 소금빵 두 개 담아줘요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카페라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "REGULAR"
+     }
+    },
+    {
+     "menu": "소금빵",
+     "quantity": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR110",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 유자차 레귤러 한 잔이랑 청포도에이드 시원하게 라지 하나요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "유자차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    },
+    {
+     "menu": "청포도에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR111",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "카푸치노 뜨겁게 레귤러 하나랑 손주 줄 마카롱 세 개 포장할게요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카푸치노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "REGULAR"
+     }
+    },
+    {
+     "menu": "마카롱",
+     "quantity": 3
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR112",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이스 아메리카노 라지로 두 잔하고 플레인크루아상 하나 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "아메리카노",
+     "quantity": 2,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL"
+     }
+    },
+    {
+     "menu": "플레인크루아상",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR113",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 대추차 큰 잔 하나랑 시원한 복숭아 아이스티 레귤러 하나 담아줘요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "대추차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "LARGE",
+     "options": {}
+    },
+    {
+     "menu": "복숭아 아이스티",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR114",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "바닐라라떼 따뜻하게 레귤러로 연하게 한 잔, 자몽에이드 라지 하나 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "LIGHT",
+      "milk": "REGULAR"
+     }
+    },
+    {
+     "menu": "자몽에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR115",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이스 녹차라떼 라지 한 잔이랑 베이글 두 개 부탁드립니다",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "녹차라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    },
+    {
+     "menu": "베이글",
+     "quantity": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR116",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 얼그레이 레귤러 하나하고 고구마라떼 따뜻하게 라지 한 잔 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "얼그레이",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    },
+    {
+     "menu": "고구마라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "LARGE",
+     "options": {
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR117",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아메리카노 연하게 따뜻한 거 레귤러 하나랑 치즈케이크 한 조각 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "LIGHT"
+     }
+    },
+    {
+     "menu": "치즈케이크",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR118",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 캐모마일 레귤러 두 잔에 초코쿠키 두 개 담아주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "캐모마일",
+     "quantity": 2,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    },
+    {
+     "menu": "초코쿠키",
+     "quantity": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "TR119",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "저기... 아메리카노 한 잔만 줘요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "아메리카노",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR120",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 카페라떼 한 잔 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "카페라떼",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR121",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이스 녹차라떼 한 잔 부탁합니다",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "녹차라떼",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR122",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "달콤한 바닐라라떼 큰 컵으로 한 잔 줘요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "바닐라라떼",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR123",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "달달한 초코라떼 하나 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "초코라떼",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR124",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "유자차 따뜻하게 한 잔 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "유자차",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR125",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "캐모마일 차 레귤러 사이즈로 한 잔 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "캐모마일",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR126",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "시원한 자몽에이드 한 잔 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "자몽에이드",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR127",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아이스 카페모카 한 잔 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "카페모카",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "TR128",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "얼그레이 홍차 작은 걸로 한 잔 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "얼그레이",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "TR129",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "산책하고 왔더니 속이 좀 허한데 속 편하게 마실 만한 따뜻한 차 추천해 줄래요?",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "캐모마일",
+    "유자차"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR130",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "커피 말고 너무 달지 않으면서 편안하게 마실 만한 음료 좀 알려줘요",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "유자차",
+    "대추차"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR131",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "커피 말고 시원하고 상큼한 거 추천해 주세요",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "청포도에이드",
+    "자몽에이드"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR132",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "저녁에 마셔도 잠 잘 오는 카페인 없는 차 종류 좀 알려줘요",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "대추차",
+    "캐모마일"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR133",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "어르신들이 제일 자주 찾는 기본 커피 메뉴가 뭐가 있어요?",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "아메리카노",
+    "카페라떼"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR134",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "너무 달지 않고 담백하게 커피랑 먹기 좋은 빵 추천해 주세요",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "소금빵",
+    "플레인크루아상"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "TR135",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL"
+     }
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "담아둔 아메리카노가 너무 진할까 봐 그런데 연하게 변경해 줘요",
+  "target": {
+   "action": "modify_cart",
+   "target": "아메리카노",
+   "changes": {
+    "strength": "LIGHT"
+   }
+  }
+ },
+ {
+  "id": "TR136",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "소금빵",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "담아둔 소금빵 하나 더 추가해서 두 개로 해줘요",
+  "target": {
+   "action": "modify_cart",
+   "target": "소금빵",
+   "changes": {
+    "quantity": 2
+   }
+  }
+ },
+ {
+  "id": "TR137",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "바닐라라떼 작은 거 말고 라지 큰 사이즈로 바꿔주세요",
+  "target": {
+   "action": "modify_cart",
+   "target": "바닐라라떼",
+   "changes": {
+    "size": "LARGE"
+   }
+  }
+ },
+ {
+  "id": "TR138",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "초코라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL"
+     }
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "초코라떼 얼음이 너무 많으면 이가 시리니까 얼음 적게로 해줘요",
+  "target": {
+   "action": "modify_cart",
+   "target": "초코라떼",
+   "changes": {
+    "ice": "LESS"
+   }
+  }
+ },
+ {
+  "id": "TR139",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카페라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "milk": "REGULAR"
+     }
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "카페라떼 우유를 소화 잘되는 두유로 바꿔주세요",
+  "target": {
+   "action": "modify_cart",
+   "target": "카페라떼",
+   "changes": {
+    "milk": "SOY"
+   }
+  }
+ },
+ {
+  "id": "TR140",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "딸기라떼",
+     "quantity": 2,
+     "temperature": "ICE",
+     "size": "LARGE"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "딸기라떼 두 잔 들어간 거 한 잔으로 줄여주세요",
+  "target": {
+   "action": "modify_cart",
+   "target": "딸기라떼",
+   "changes": {
+    "quantity": 1
+   }
+  }
+ },
+ {
+  "id": "TR141",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    },
+    {
+     "menu": "치즈케이크",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "담아둔 치즈케이크는 안 먹을 테니 장바구니에서 빼주세요",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "치즈케이크"
+  }
+ },
+ {
+  "id": "TR142",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "콜드브루",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "아까 잘못 누른 콜드브루는 지워줘요",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "콜드브루"
+  }
+ },
+ {
+  "id": "TR143",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "유자차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    },
+    {
+     "menu": "마카롱",
+     "quantity": 2
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "담아둔 마카롱은 안 먹을 테니 목록에서 빼주세요",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "마카롱"
+  }
+ },
+ {
+  "id": "TR144",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "청포도에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "장바구니에 담긴 청포도에이드는 취소하고 빼주세요",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "청포도에이드"
+  }
+ },
+ {
+  "id": "TR145",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "지금 내가 뭘 담았는지 확인하게 장바구니 좀 보여줘요",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "TR146",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "LARGE"
+    },
+    {
+     "menu": "소금빵",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "눈이 침침해서 그러는데 장바구니에 담긴 것 좀 크게 띄워줄래요?",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "TR147",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "콜드브루",
+     "quantity": 2,
+     "temperature": "ICE",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "지금까지 고른 메뉴 목록 전체 화면으로 띄워주세요",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "TR148",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "유자차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "계산하기 전에 담아둔 장바구니 목록 화면 좀 보여줘요",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "TR149",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 3,
+     "temperature": "ICE",
+     "size": "LARGE"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "이것저것 잘못 담았는데 장바구니 싹 비우고 처음부터 할게요",
+  "target": {
+   "action": "reset_order"
+  }
+ },
+ {
+  "id": "TR150",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카페라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "담긴 거 전부 다 취소하고 처음 화면으로 돌려주세요",
+  "target": {
+   "action": "reset_order"
+  }
+ },
+ {
+  "id": "TR151",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "초코라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "아이고 주문을 잘못했네, 장바구니 싹 비우고 처음부터 다시 할게요",
+  "target": {
+   "action": "reset_order"
+  }
+ },
+ {
+  "id": "TR152",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    },
+    {
+     "menu": "초코라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "이대로 주문하면 맞는지 주문 내역 확인해 주세요",
+  "target": {
+   "action": "confirm_order",
+   "summary_required": true
+  }
+ },
+ {
+  "id": "TR153",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "콜드브루",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "담긴 내역 다 맞으니까 결제 전 최종 확인해줘",
+  "target": {
+   "action": "confirm_order",
+   "summary_required": true
+  }
+ },
+ {
+  "id": "TR154",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카페라떼",
+     "quantity": 2,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "네, 맞게 담겼습니다. 확정해 주세요",
+  "target": {
+   "action": "confirm_order",
+   "summary_required": true
+  }
+ },
+ {
+  "id": "TR155",
+  "split": "train_192",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "유자차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "유자차 한 잔 담긴 거 맞지요? 주문 확인하고 결제로 넘겨줘요",
+  "target": {
+   "action": "confirm_order",
+   "summary_required": true
+  }
+ },
+ {
+  "id": "TR156",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "녹차라떼"
+   ]
+  },
+  "user_text": "따뜻한 녹차라떼 레귤러 한 잔요",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "녹차라떼",
+   "alternatives": [
+    "초코라떼",
+    "고구마라떼"
+   ]
+  }
+ },
+ {
+  "id": "TR157",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "치즈케이크"
+   ]
+  },
+  "user_text": "치즈케이크 한 조각 담아줘요",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "치즈케이크",
+   "alternatives": [
+    "티라미수",
+    "초코쿠키"
+   ]
+  }
+ },
+ {
+  "id": "TR158",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "소금빵"
+   ]
+  },
+  "user_text": "소금빵 두 개 포장해 주세요",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "소금빵",
+   "alternatives": [
+    "베이글",
+    "플레인크루아상"
+   ]
+  }
+ },
+ {
+  "id": "TR159",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "자몽에이드"
+   ]
+  },
+  "user_text": "시원한 자몽에이드 레귤러 한 잔 마실게요",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "자몽에이드",
+   "alternatives": [
+    "레몬에이드",
+    "청포도에이드"
+   ]
+  }
+ },
+ {
+  "id": "TR160",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "커피 말고 차나 에이드 있는 메뉴판 화면으로 넘겨줄래요?",
+  "target": {
+   "action": "show_category",
+   "category": "NON_COFFEE"
+  }
+ },
+ {
+  "id": "TR161",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "케이크나 빵 디저트 메뉴 화면 보여줘",
+  "target": {
+   "action": "show_category",
+   "category": "DESSERT"
+  }
+ },
+ {
+  "id": "TR162",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "커피 메뉴 코너로 화면 이동해 주세요",
+  "target": {
+   "action": "show_category",
+   "category": "COFFEE"
+  }
+ },
+ {
+  "id": "TR163",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "케이크나 빵 있는 디저트 코너로 화면 바꿔봐요",
+  "target": {
+   "action": "show_category",
+   "category": "DESSERT"
+  }
+ },
+ {
+  "id": "TR164",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "지갑에 신용카드 꽂아서 계산할게요",
+  "target": {
+   "action": "start_payment",
+   "method": "CARD"
+  }
+ },
+ {
+  "id": "TR165",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "핸드폰 삼성페이로 계산할게요",
+  "target": {
+   "action": "start_payment",
+   "method": "SAMSUNG_PAY"
+  }
+ },
+ {
+  "id": "TR166",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "카카오페이 바코드로 결제할게요",
+  "target": {
+   "action": "start_payment",
+   "method": "KAKAO_PAY"
+  }
+ },
+ {
+  "id": "TR167",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "네이버페이로 결제 진행해 주세요",
+  "target": {
+   "action": "start_payment",
+   "method": "NAVER_PAY"
+  }
+ },
+ {
+  "id": "TR168",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "아이폰 애플페이로 결제할게요",
+  "target": {
+   "action": "start_payment",
+   "method": "APPLE_PAY"
+  }
+ },
+ {
+  "id": "TR169",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "현금으로 내고 싶은데 카운터 결제 선택해 줘요",
+  "target": {
+   "action": "start_payment",
+   "method": "CASH"
+  }
+ },
+ {
+  "id": "TR170",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "핸드폰 번호 11자리 눌러서 포인트 적립할게요",
+  "target": {
+   "action": "open_loyalty_input",
+   "input_mode": "KEYPAD"
+  }
+ },
+ {
+  "id": "TR171",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "스탬프 적립하게 전화번호 뒷자리 누르는 키패드 열어줘",
+  "target": {
+   "action": "open_loyalty_input",
+   "input_mode": "LAST4_KEYPAD"
+  }
+ },
+ {
+  "id": "TR172",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "전화번호로 도장 적립하고 싶은데 번호판 좀 열어줘요",
+  "target": {
+   "action": "open_loyalty_input",
+   "input_mode": "KEYPAD"
+  }
+ },
+ {
+  "id": "TR173",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "스탬프 적립 화면으로 넘어가 주세요",
+  "target": {
+   "action": "open_loyalty_input",
+   "input_mode": "KEYPAD"
+  }
+ },
+ {
+  "id": "TR174",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "모바일 쿠폰 쓸 수 있는 거 있나 쿠폰함 열어줘",
+  "target": {
+   "action": "open_coupon_list"
+  }
+ },
+ {
+  "id": "TR175",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "등록된 할인 쿠폰 목록 화면에 보여주세요",
+  "target": {
+   "action": "open_coupon_list"
+  }
+ },
+ {
+  "id": "TR176",
+  "split": "train_192",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "카카오톡으로 받은 쿠폰이 있는데 할인 쿠폰 화면 좀 띄워줘요",
+  "target": {
+   "action": "open_coupon_list"
+  }
+ },
+ {
+  "id": "TR177",
+  "split": "train_192",
+  "screen": "receipt_choice",
+  "context": {
+   "screen": "receipt_choice",
+   "payment_status": "approved"
+  },
+  "user_text": "나중에 확인할 거라 영수증 종이로 뽑아주세요",
+  "target": {
+   "action": "set_receipt",
+   "print": true
+  }
+ },
+ {
+  "id": "TR178",
+  "split": "train_192",
+  "screen": "receipt_choice",
+  "context": {
+   "screen": "receipt_choice",
+   "payment_status": "approved"
+  },
+  "user_text": "영수증은 필요 없으니 출력 안 하고 넘어갈게요",
+  "target": {
+   "action": "set_receipt",
+   "print": false
+  }
+ },
+ {
+  "id": "TR179",
+  "split": "train_192",
+  "screen": "receipt_choice",
+  "context": {
+   "screen": "receipt_choice",
+   "payment_status": "approved"
+  },
+  "user_text": "회사 제출용으로 종이 영수증 출력해 주세요",
+  "target": {
+   "action": "set_receipt",
+   "print": true
+  }
+ },
+ {
+  "id": "TR180",
+  "split": "train_192",
+  "screen": "receipt_choice",
+  "context": {
+   "screen": "receipt_choice",
+   "payment_status": "approved"
+  },
+  "user_text": "영수증은 버려주세요, 안 받을게요",
+  "target": {
+   "action": "set_receipt",
+   "print": false
+  }
+ },
+ {
+  "id": "TR181",
+  "split": "train_192",
+  "screen": "complete",
+  "context": {
+   "screen": "complete",
+   "payment_status": "approved",
+   "order_number": "A055",
+   "pickup": "VIBRATION_BELL"
+  },
+  "user_text": "계산 다 됐나요? 주문번호랑 진동벨 어디서 받는지 알려줘요",
+  "target": {
+   "action": "announce_order",
+   "order_number": "A055",
+   "pickup": "VIBRATION_BELL"
+  }
+ },
+ {
+  "id": "TR182",
+  "split": "train_192",
+  "screen": "complete",
+  "context": {
+   "screen": "complete",
+   "payment_status": "approved",
+   "order_number": "A056",
+   "pickup": "VIBRATION_BELL"
+  },
+  "user_text": "주문 완료됐나요? 번호랑 어디서 받는지 알려주세요",
+  "target": {
+   "action": "announce_order",
+   "order_number": "A056",
+   "pickup": "VIBRATION_BELL"
+  }
+ },
+ {
+  "id": "TR183",
+  "split": "train_192",
+  "screen": "complete",
+  "context": {
+   "screen": "complete",
+   "payment_status": "approved",
+   "order_number": "A057",
+   "pickup": "VIBRATION_BELL"
+  },
+  "user_text": "귀가 어두워서 그러는데 제 주문번호 몇 번인지 말로 읽어줘요",
+  "target": {
+   "action": "announce_order",
+   "order_number": "A057",
+   "pickup": "VIBRATION_BELL"
+  }
+ },
+ {
+  "id": "TR184",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "돋보기를 안 가져와서 글씨가 안 보여요. 화면 글씨 아주 크게 띄워줘요",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "HIGH_CONTRAST"
+  }
+ },
+ {
+  "id": "TR185",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "글자가 흐릿하고 눈이 침침하니 고대비 화면으로 바꿔주세요",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "HIGH_CONTRAST"
+  }
+ },
+ {
+  "id": "TR186",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "글자 읽기가 힘드니 누를 때마다 소리로 안내해 주는 음성 모드로 해줘요",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "VOICE_GUIDE"
+  }
+ },
+ {
+  "id": "TR187",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "노안이라 글씨가 작아서 안 보이는데 큰 글씨 모드로 바꿔줄래요?",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "HIGH_CONTRAST"
+  }
+ },
+ {
+  "id": "TR188",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "결제를 어떻게 넘기는지 모르겠어요. 직원분 좀 와주시면 감사하겠습니다",
+  "target": {
+   "action": "call_staff",
+   "reason": "USER_REQUESTED_ASSISTANCE"
+  }
+ },
+ {
+  "id": "TR189",
+  "split": "train_192",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "카드를 넣었는데 결제가 안 넘어가요. 직원분 좀 와서 도와주세요",
+  "target": {
+   "action": "call_staff",
+   "reason": "USER_REQUESTED_ASSISTANCE"
+  }
+ },
+ {
+  "id": "TR190",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [],
+   "recognition_failure_count": 2
+  },
+  "user_text": "말을 해도 기계가 인식을 못 하네요. 직원분 호출해 주세요",
+  "target": {
+   "action": "call_staff",
+   "reason": "VOICE_RECOGNITION_FAILED_TWICE"
+  }
+ },
+ {
+  "id": "TR191",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "어디를 눌러야 할지 너무 헷갈리는데 매장 직원분 좀 불러줘요",
+  "target": {
+   "action": "call_staff",
+   "reason": "USER_REQUESTED_ASSISTANCE"
+  }
+ },
+ {
+  "id": "TR192",
+  "split": "train_192",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "어디 보자 지갑을 안주머니에 뒀나 가방에 뒀나...",
+  "target": {
+   "action": "no_action",
+   "reason": "NO_COMMAND"
+  }
+ },
+ {
+  "id": "EV001",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "고구마라떼 차갑고 큰 걸로 얼음 적게 한 잔 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "고구마라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "LESS",
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "EV002",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "얼그레이 따뜻하게 한 잔 줘요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "얼그레이",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "EV003",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "청포도에이드 라지 하나하고 플레인크루아상 두 개 담아줘",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "청포도에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0
+     }
+    },
+    {
+     "menu": "플레인크루아상",
+     "quantity": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "EV004",
+  "split": "eval_fixed_48",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "복숭아 아이스티",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR",
+     "options": {
+      "ice": "NORMAL"
+     }
+    }
+   ]
+  },
+  "user_text": "복숭아 아이스티 얼음을 많이 넣는 걸로 바꿔줘",
+  "target": {
+   "action": "modify_cart",
+   "target": "복숭아 아이스티",
+   "changes": {
+    "ice": "MORE"
+   }
+  }
+ },
+ {
+  "id": "EV005",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "카페모카"
+   ]
+  },
+  "user_text": "카페모카 아이스 레귤러 주문할게요",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "카페모카",
+   "alternatives": [
+    "카페라떼",
+    "카푸치노"
+   ]
+  }
+ },
+ {
+  "id": "EV006",
+  "split": "eval_fixed_48",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "애플페이로 계산할게",
+  "target": {
+   "action": "start_payment",
+   "method": "APPLE_PAY"
+  }
+ },
+ {
+  "id": "EV007",
+  "split": "eval_fixed_48",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "쓸 수 있는 쿠폰이 있는지 확인해줘",
+  "target": {
+   "action": "open_coupon_list"
+  }
+ },
+ {
+  "id": "EV008",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "키가 작아서 화면 위에 있는 메뉴를 누르기 어려워요",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "LOWER_TOUCH"
+  }
+ },
+ {
+  "id": "EV009",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "이 기계를 어떻게 써야 할지 모르겠으니 직원 좀 불러주세요",
+  "target": {
+   "action": "call_staff",
+   "reason": "USER_REQUESTED_ASSISTANCE"
+  }
+ },
+ {
+  "id": "EV010",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아직 뭘 주문할지 생각 중이에요",
+  "target": {
+   "action": "no_action",
+   "reason": "NO_COMMAND"
+  }
+ },
+ {
+  "id": "EV011",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "제가 단 걸 좋아하는데 디저트 중에 뭐가 괜찮을까요",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "티라미수",
+    "초코쿠키"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "EV012",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "카푸치노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "제가 뭘 담았는지 한 번 보여줄 수 있어요?",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "EV013",
+  "split": "eval_fixed_48",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "딸기라떼",
+     "quantity": 1
+    },
+    {
+     "menu": "소금빵",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "소금빵은 잘못 눌러서 담긴 거예요, 빼주세요",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "소금빵"
+  }
+ },
+ {
+  "id": "EV014",
+  "split": "eval_fixed_48",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "유자차",
+     "quantity": 1
+    },
+    {
+     "menu": "마카롱",
+     "quantity": 2
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "너무 헷갈려서 처음부터 다시 할래요",
+  "target": {
+   "action": "reset_order"
+  }
+ },
+ {
+  "id": "EV015",
+  "split": "eval_fixed_48",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카페모카",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "이대로 결제하면 맞는 거죠? 다시 한 번만요",
+  "target": {
+   "action": "confirm_order",
+   "summary_required": true
+  }
+ },
+ {
+  "id": "EV016",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "손주가 커피 말고 다른 거 마시고 싶다는데 논커피 음료 화면으로 가줄 수 있어요?",
+  "target": {
+   "action": "show_category",
+   "category": "NON_COFFEE"
+  }
+ },
+ {
+  "id": "EV017",
+  "split": "eval_fixed_48",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "저도 번호 넣으면 적립되는 거 맞죠?",
+  "target": {
+   "action": "open_loyalty_input",
+   "input_mode": "KEYPAD"
+  }
+ },
+ {
+  "id": "EV018",
+  "split": "eval_fixed_48",
+  "screen": "receipt_choice",
+  "context": {
+   "screen": "receipt_choice",
+   "payment_status": "approved"
+  },
+  "user_text": "영수증 하나 뽑아주실 수 있나요?",
+  "target": {
+   "action": "set_receipt",
+   "print": true
+  }
+ },
+ {
+  "id": "EV019",
+  "split": "eval_fixed_48",
+  "screen": "complete",
+  "context": {
+   "screen": "complete",
+   "payment_status": "approved",
+   "order_number": "A031",
+   "pickup": "VIBRATION_BELL"
+  },
+  "user_text": "주문번호가 몇 번이었죠?",
+  "target": {
+   "action": "announce_order",
+   "order_number": "A031",
+   "pickup": "VIBRATION_BELL"
+  }
+ },
+ {
+  "id": "EV020",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "저는 얼그레이 따뜻하게 레귤러로 하나, 손주는 레몬에이드 차갑게 큰 걸로 하나요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "얼그레이",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    },
+    {
+     "menu": "레몬에이드",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "EV021",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "나 마실 따뜻한 캐모마일 차 레귤러 하나랑 손주 녀석 먹을 마카롱 두 개 포장해줘",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "캐모마일",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    },
+    {
+     "menu": "마카롱",
+     "quantity": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "EV022",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "그 따뜻한 캐모마일 차 좀 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "캐모마일",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "EV023",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "요즘 눈이 더 침침해져서 그러는데 화면 글씨 좀 키워줄 수 있어요?",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "HIGH_CONTRAST"
+  }
+ },
+ {
+  "id": "EV024",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "아무리 봐도 모르겠어요, 그냥 직원분이 도와주시면 좋겠어요",
+  "target": {
+   "action": "call_staff",
+   "reason": "USER_REQUESTED_ASSISTANCE"
+  }
+ },
+ {
+  "id": "EV025",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "따뜻한 카페라떼 보통 잔으로 연하게 한 잔 부탁합니다",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카페라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "LIGHT",
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "EV026",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "콜드브루 시원하게 라지로 얼음 적게 한 잔 주세요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "콜드브루",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "LESS",
+      "shot": 0,
+      "syrup": 0
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "EV027",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "나는 따뜻한 유자차 레귤러 하나 마시고, 같이 온 친구는 시원한 초코라떼 큰 걸로 하나 줘요",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "유자차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {}
+    },
+    {
+     "menu": "초코라떼",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "LARGE",
+     "options": {
+      "ice": "NORMAL",
+      "syrup": 0,
+      "milk": "REGULAR"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "EV028",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "저 마실 따뜻한 카푸치노 작은 거 한 잔이랑 간식으로 먹을 소금빵 하나 담아줘",
+  "target": {
+   "action": "add_to_cart",
+   "items": [
+    {
+     "menu": "카푸치노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "shot": 0,
+      "syrup": 0,
+      "strength": "NORMAL",
+      "milk": "REGULAR"
+     }
+    },
+    {
+     "menu": "소금빵",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "EV029",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "부드러운 카푸치노 보통 잔으로 한 잔 줘요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "temperature",
+   "item": "카푸치노",
+   "choices": [
+    "HOT",
+    "ICE"
+   ]
+  }
+ },
+ {
+  "id": "EV030",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "시원한 복숭아 아이스티 한 잔 주세요",
+  "target": {
+   "action": "ask_clarification",
+   "field": "size",
+   "item": "복숭아 아이스티",
+   "choices": [
+    "REGULAR",
+    "LARGE"
+   ]
+  }
+ },
+ {
+  "id": "EV031",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "외래어 이름 말고 달지 않은 따뜻한 차 두 가지만 알려줄 수 있나요?",
+  "target": {
+   "action": "recommend_menu",
+   "items": [
+    "대추차",
+    "유자차"
+   ],
+   "confirmation_required": true
+  }
+ },
+ {
+  "id": "EV032",
+  "split": "eval_fixed_48",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "바닐라라떼",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR",
+     "options": {
+      "strength": "NORMAL"
+     }
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "바닐라라떼가 너무 진할까 봐 걱정되는데 연하게 타주세요",
+  "target": {
+   "action": "modify_cart",
+   "target": "바닐라라떼",
+   "changes": {
+    "strength": "LIGHT"
+   }
+  }
+ },
+ {
+  "id": "EV033",
+  "split": "eval_fixed_48",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "아메리카노",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    },
+    {
+     "menu": "초코쿠키",
+     "quantity": 1
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "장바구니에 담긴 초코쿠키는 안 먹을 테니 빼주세요",
+  "target": {
+   "action": "remove_from_cart",
+   "target": "초코쿠키"
+  }
+ },
+ {
+  "id": "EV034",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [
+    {
+     "menu": "유자차",
+     "quantity": 1,
+     "temperature": "HOT",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "담아둔 메뉴가 제대로 들어갔는지 장바구니 화면 좀 열어줘요",
+  "target": {
+   "action": "show_cart"
+  }
+ },
+ {
+  "id": "EV035",
+  "split": "eval_fixed_48",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "카페모카",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "주문을 잘못 넣었으니 장바구니 싹 비우고 다시 할게요",
+  "target": {
+   "action": "reset_order"
+  }
+ },
+ {
+  "id": "EV036",
+  "split": "eval_fixed_48",
+  "screen": "cart",
+  "context": {
+   "screen": "cart",
+   "cart": [
+    {
+     "menu": "콜드브루",
+     "quantity": 1,
+     "temperature": "ICE",
+     "size": "REGULAR"
+    }
+   ],
+   "sold_out": []
+  },
+  "user_text": "내가 고른 내용이 맞는지 소리로 읽고 확인해 주시겠어요?",
+  "target": {
+   "action": "confirm_order",
+   "summary_required": true
+  }
+ },
+ {
+  "id": "EV037",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": [
+    "티라미수"
+   ]
+  },
+  "user_text": "달달한 티라미수 케이크 하나 포장해 줘",
+  "target": {
+   "action": "inform_sold_out",
+   "item": "티라미수",
+   "alternatives": [
+    "치즈케이크",
+    "초코쿠키"
+   ]
+  }
+ },
+ {
+  "id": "EV038",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "음료는 골랐으니 빵이랑 케이크 디저트 코너로 이동해줘요",
+  "target": {
+   "action": "show_category",
+   "category": "DESSERT"
+  }
+ },
+ {
+  "id": "EV039",
+  "split": "eval_fixed_48",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "플라스틱 신용카드로 결제하겠습니다",
+  "target": {
+   "action": "start_payment",
+   "method": "CARD"
+  }
+ },
+ {
+  "id": "EV040",
+  "split": "eval_fixed_48",
+  "screen": "payment",
+  "context": {
+   "screen": "payment",
+   "order_confirmed": true
+  },
+  "user_text": "카카오페이 바코드 찍어서 결제할게요",
+  "target": {
+   "action": "start_payment",
+   "method": "KAKAO_PAY"
+  }
+ },
+ {
+  "id": "EV041",
+  "split": "eval_fixed_48",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "전화번호로 스탬프 찍는 번호판 화면 띄워줘요",
+  "target": {
+   "action": "open_loyalty_input",
+   "input_mode": "KEYPAD"
+  }
+ },
+ {
+  "id": "EV042",
+  "split": "eval_fixed_48",
+  "screen": "loyalty",
+  "context": {
+   "screen": "loyalty",
+   "payment_pending": true
+  },
+  "user_text": "사용 가능한 할인 쿠폰 목록 보여주실래요?",
+  "target": {
+   "action": "open_coupon_list"
+  }
+ },
+ {
+  "id": "EV043",
+  "split": "eval_fixed_48",
+  "screen": "receipt_choice",
+  "context": {
+   "screen": "receipt_choice",
+   "payment_status": "approved"
+  },
+  "user_text": "영수증 챙겨가야 하니까 종이로 꼭 출력해 주세요",
+  "target": {
+   "action": "set_receipt",
+   "print": true
+  }
+ },
+ {
+  "id": "EV044",
+  "split": "eval_fixed_48",
+  "screen": "complete",
+  "context": {
+   "screen": "complete",
+   "payment_status": "approved",
+   "order_number": "A099",
+   "pickup": "VIBRATION_BELL"
+  },
+  "user_text": "화면이 침침해서 안 보이는데 제 주문번호 말소리로 알려줄래요?",
+  "target": {
+   "action": "announce_order",
+   "order_number": "A099",
+   "pickup": "VIBRATION_BELL"
+  }
+ },
+ {
+  "id": "EV045",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "버튼 글씨가 흐려서 안 보여요. 대비 높은 선명한 화면으로 바꿔줘요",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "HIGH_CONTRAST"
+  }
+ },
+ {
+  "id": "EV046",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "메뉴 누를 때마다 소리로 설명해 주시면 감사하겠습니다",
+  "target": {
+   "action": "set_accessibility",
+   "mode": "VOICE_GUIDE"
+  }
+ },
+ {
+  "id": "EV047",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "화면이 너무 복잡해서 어떻게 누르는지 모르겠으니 직원분 좀 불러주세요",
+  "target": {
+   "action": "call_staff",
+   "reason": "USER_REQUESTED_ASSISTANCE"
+  }
+ },
+ {
+  "id": "EV048",
+  "split": "eval_fixed_48",
+  "screen": "menu",
+  "context": {
+   "screen": "menu",
+   "cart": [],
+   "sold_out": []
+  },
+  "user_text": "어디 보자... 조금 더 살펴보고 고를 테니 기다려줘요",
+  "target": {
+   "action": "no_action",
+   "reason": "NO_COMMAND"
+  }
+ }
+]
