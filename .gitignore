@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# On-Device Large AI / Speech Model Binaries (Do not push to GitHub)
+*.rkllm
+*.onnx
+*.safetensors
+*.bin
+*.pt
+*.pth
+/models/
+# Temporary Audio Files (Privacy policy: deleted immediately after STT/TTS)
+*.wav
+*.pcm
+*.mp3
+tmp_audio/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# SQLite DB files (runtime data; each machine creates its own via init_db())
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Stamp HMAC secret (never commit; back it up together with the DB)
+.onkiosk_stamp_key
