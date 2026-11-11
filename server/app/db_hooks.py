@@ -47,6 +47,10 @@ def log_inference(**kwargs: Any) -> None:
     if _db is None or not hasattr(_db, "log_inference"):
         log.info("inference %s", {k: v for k, v in kwargs.items() if k != "response_obj"})
         return
+    # database.log_inference 는 지연시간을 int 로 비교(<0)하므로 None(미측정)은 0 으로 보낸다.
+    for key in ("stt_latency_ms", "llm_latency_ms"):
+        if kwargs.get(key) is None:
+            kwargs[key] = 0
     try:
         _db.log_inference(**kwargs)
     except Exception:
