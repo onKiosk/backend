@@ -1,0 +1,9 @@
+# OnKiosk 백엔드 파트 3 (음성 STT·TTS + DB) 전용 의존성
+# 설치:  pip install -r requirements-part3.txt
+#
+# 중요: sherpa-onnx 는 반드시 1.13.8 로 고정한다.
+#       2.0.0 이상에서는 한국어 VITS(mimic3)가 사용하던 espeak 음소 변환(data_dir)이 제거되어 TTS 가 동작하지 않는다.
+sherpa-onnx==1.13.8
+numpy>=1.26
+soundfile>=0.12        # WAV/FLAC/OGG 디코딩
+sounddevice>=0.4       # (선택) 마이크 녹음 - tools/stt_mic_eval.py 에서만 사용
