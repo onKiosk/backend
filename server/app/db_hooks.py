@@ -5,6 +5,8 @@ database.py를 server/ 폴더(또는 PYTHONPATH)에 두면 자동으로 사용�
 """
 import logging
 import os
+import sys
+from pathlib import Path
 from typing import Any, Optional
 
 from .policy import DEFAULT_SOLD_OUT
@@ -16,7 +18,16 @@ _db: Any = None
 if os.getenv("ONKIOSK_DB", "auto").lower() != "off":
     try:
         import database as _db  # type: ignore  # noqa: F401
-    except Exception:  # 모듈이 없거나 import 오류
+    except ModuleNotFoundError:
+        # server/ 안에 없으면 저장소 루트(server/ 바로 밖)의 database.py를 찾는다.
+        _root = str(Path(__file__).resolve().parents[2])
+        if _root not in sys.path:
+            sys.path.append(_root)
+        try:
+            import database as _db  # type: ignore  # noqa: F401,F811
+        except Exception:
+            _db = None
+    except Exception:  # database.py 자체의 import 오류
         _db = None
 
 
