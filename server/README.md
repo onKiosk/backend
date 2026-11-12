@@ -29,6 +29,13 @@ uvicorn main:app --reload --port 8000     # 서버 (http://localhost:8000/docs)
 - `GET /api/answer-texts`: `answer_question`의 15개 `answer_code` → 안내 문구(초안).
 - `GET /health`
 
+`POST /api/orders` (결제 확정 시) — `{ "items":[CartItem...], "payment_method":"KAKAO_PAY", "pickup_type":"VIBRATION_BELL", "print_receipt":true }`
+→ `{ "ok":true, "order_number":"A001", "total_price":4500, "order":{...} }` / 실패 `{ "ok":false, "error_code":"SOLD_OUT(409)|INVALID_ORDER(422)|DB_UNAVAILABLE(503)|ORDER_FAILED(500)" }`. 총액은 DB 가격표로 서버가 계산한다.
+
+`POST /api/stamps` — `{ "phone_number":"1234" | "01012345678" | "010-1234-5678", "count":1 }` → `{ "ok":true, "stamp":{...} }` / `INVALID_PHONE(422)` 등. 번호는 로그·응답에 남기지 않는다.
+
+`GET /api/aliases`(별칭 사전), `GET /api/sold-out`(품절 단일 출처)
+
 ## 환경변수
 | 이름 | 기본값 | 설명 |
 |---|---|---|
@@ -53,8 +60,7 @@ tests/                  정답 240건 검증 + API/정책/폴백 테스트
 ```
 
 ## 확인 필요 (TODO)
-1. `app/prompt.py`의 user 메시지 형식을 학습 JSONL과 동일하게 맞출 것 (현재는 임시 형식)
-2. `prompts/sp01.txt`를 v5.5 학습에 쓴 SP01로 교체 (현재는 v5 README의 SP01)
-3. `answer_question` 필드명을 v5.5 엑셀로 확인
-4. `database.py`를 `server/`에 두면 화면 정규화·품절 조회·추론 로그가 자동 연결됨 (함수 시그니처 확인)
-5. HF / RKLLM 백엔드 구현 (보드 수령 후 타임아웃 값 결정)
+1. (완료) `app/prompt.py`·`prompts/sp01.txt`를 v7 학습 형식·SP01(19종)로 교체함. 형식은 `tests/test_prompt.py`가 학습 JSONL 샘플과 비교해 지킨다.
+2. HF / RKLLM 백엔드에서 chat template(system/user 래핑)이 모델 변환 설정과 겹치지 않는지 확인
+3. `database.py`를 저장소 루트(`server/` 바로 밖) 또는 `server/`에 두면 화면 정규화·품절 조회·추론 로그·주문·적립이 자동 연결됨. 서버 시작 시 `init_db()`를 자동 호출한다.
+4. HF / RKLLM 백엔드 구현 (보드 수령 후 타임아웃 값 결정)

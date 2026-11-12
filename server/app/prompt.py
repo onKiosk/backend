@@ -1,10 +1,11 @@
 """SP01 시스템 프롬프트 + 모델 입력 조립.
 
-!! 학습 때 쓴 형식과 한 글자도 다르면 안 된다 !!
-- prompts/sp01.txt 는 데이터셋 v5 README의 SP01 전문이다. v5.5(answer_question 추가)에서는 SP01이 바뀌었을 수 있으니
-  학습에 실제로 쓴 SP01 파일로 교체해야 한다.
-- build_user_content()의 형식(Context/발화를 어떻게 합치는지)은 민재 님의 학습 파이프라인(JSONL 변환 코드)과 맞춰야 한다.
-  지금 형식은 임시(TODO) 값이다.
+학습(v7)·RKLLM 양자화에 쓴 형식과 한 글자도 다르면 안 된다.
+- prompts/sp01.txt : v7 학습에 쓴 SP01 원문 (19종 Action, answer_question 포함). 줄바꿈 없는 한 단락.
+- build_user_content() : 학습 JSONL의 user 메시지와 같은 형식
+    "[CONTEXT]\n<압축 JSON>\n[USER]\n<발화>"
+  (JSON은 separators=(",", ":"), ensure_ascii=False. JSON 바로 다음 줄에 [USER], 빈 줄 없음 — 민재 님 확정 규격.)
+형식을 바꾸면 tests/test_prompt.py(학습 JSONL 샘플과 비교)가 깨지도록 해 두었다.
 """
 import json
 import re
@@ -22,9 +23,8 @@ def redact_digits(text: str) -> str:
 
 
 def build_user_content(user_text: str, context: dict) -> str:
-    # TODO(학습 형식 확인): 학습 JSONL의 user 메시지 구성과 동일하게 맞출 것
     ctx = json.dumps(context, ensure_ascii=False, separators=(",", ":"))
-    return f"Context: {ctx}\n사용자 발화: {user_text}"
+    return f"[CONTEXT]\n{ctx}\n[USER]\n{user_text}"
 
 
 def build_messages(user_text: str, context: dict) -> list[dict]:

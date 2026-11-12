@@ -261,3 +261,36 @@ class ActionResponse(BaseModel):
     source: str = "model"  # model | rule
     screen: Optional[str] = None  # 정규화된 화면(6종)
     llm_latency_ms: Optional[int] = None
+
+
+# ---------------------------------------------------------------- 주문·적립 API
+PayMethod = Literal["CARD", "SAMSUNG_PAY", "KAKAO_PAY", "NAVER_PAY", "APPLE_PAY", "CASH"]
+PickupType = Literal["DINE_IN", "TAKEOUT", "VIBRATION_BELL"]
+
+
+class OrderRequest(Strict):
+    items: list[CartItem] = Field(min_length=1)
+    payment_method: PayMethod
+    pickup_type: PickupType = "VIBRATION_BELL"
+    print_receipt: bool = False
+
+
+class OrderResponse(BaseModel):
+    ok: bool
+    order_number: Optional[str] = None  # 예: A001 (database.create_order 발급)
+    total_price: Optional[int] = None
+    order: Optional[dict] = None  # database가 돌려준 나머지 필드
+    error_code: Optional[str] = None  # SOLD_OUT | INVALID_ORDER | DB_UNAVAILABLE | ORDER_FAILED
+    detail: Optional[str] = None
+
+
+class StampRequest(Strict):
+    phone_number: str = Field(max_length=20)  # 4자리(뒷번호) 또는 11자리, 하이픈 허용
+    count: int = Field(1, ge=1, le=10)
+
+
+class StampResponse(BaseModel):
+    ok: bool
+    stamp: Optional[dict] = None
+    error_code: Optional[str] = None  # INVALID_PHONE | DB_UNAVAILABLE | STAMP_FAILED
+    detail: Optional[str] = None
