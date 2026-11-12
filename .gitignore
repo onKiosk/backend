@@ -42,3 +42,6 @@ Thumbs.db
 
 # Stamp HMAC secret (never commit; back it up together with the DB)
 .onkiosk_stamp_key
+onkiosk.db*
+.onkiosk_stamp_key
+*.db-wal
