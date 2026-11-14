@@ -135,6 +135,11 @@ def rule_based(text: str, ctx: dict) -> dict:
         return {"action": "show_cart"}
     if re.search(r"주문확인|이대로|맞아요", t):
         return {"action": "confirm_order", "summary_required": True}
+    # "주문할게요" 등 방법을 말하지 않은 진행 의사: 메뉴·장바구니 화면에서만 다음 단계(confirm_order)로.
+    if ctx.get("screen") in ("menu", "cart") and re.search(
+        r"(주문|결제|계산)(할게|할께|할래|하겠|해줘|해주세요|해요|하자)", t
+    ):
+        return {"action": "confirm_order", "summary_required": True}
     if "추천" in t:
         items = ["바닐라라떼", "초코라떼"]
         if re.search(r"시원|아이스|차가", t):
