@@ -187,3 +187,20 @@ def test_health_and_answer_texts_and_cors():
                  "Access-Control-Request-Headers": "content-type"},
     )
     assert pre.headers.get("access-control-allow-origin") == "http://localhost:3000"
+
+
+@pytest.mark.parametrize("screen", ["menu", "cart"])
+@pytest.mark.parametrize("text", ["주문할게요", "주문 할게요", "결제할게요", "계산할게요"])
+def test_mock_order_intent_confirms_on_menu_and_cart(screen, text):
+    from app.backends.mock import rule_based
+
+    ctx = {"screen": screen, "cart": [{"menu": "아메리카노", "quantity": 1}]}
+    assert rule_based(text, ctx)["action"] == "confirm_order"
+
+
+def test_mock_order_intent_ignored_on_payment_screen():
+    from app.backends.mock import rule_based
+
+    assert rule_based("결제할게요", {"screen": "payment", "cart": []})["action"] == "no_action"
+    # 결제 수단을 말하면 기존처럼 결제 시작
+    assert rule_based("카드로 결제할게요", {"screen": "cart", "cart": []})["action"] == "start_payment"
