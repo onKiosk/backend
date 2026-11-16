@@ -221,3 +221,43 @@ def test_mock_named_latte_still_orders():
 
     assert rule_based("카페라떼 주세요", {"screen": "menu", "cart": []})["action"] == "ask_clarification"
     assert rule_based("바닐라라떼 아이스 라지 주세요", {"screen": "menu", "cart": []})["action"] == "add_to_cart"
+
+
+@pytest.mark.parametrize("text", ["차 보여줘", "차 메뉴 보여줘", "차를 보여줘", "차 주세요", "시원한 차 보여줘"])
+def test_mock_tea_word_shows_noncoffee(text):
+    from app.backends.mock import rule_based
+
+    assert rule_based(text, {"screen": "menu", "cart": []})["action"] == "show_category"
+
+
+@pytest.mark.parametrize("text", ["차가운 거 추천해줘", "차가운 아메리카노 라지 주세요"])
+def test_mock_tea_word_does_not_match_inside_words(text):
+    from app.backends.mock import rule_based
+
+    a = rule_based(text, {"screen": "menu", "cart": []})
+    assert a["action"] != "show_category"
+
+
+@pytest.mark.parametrize(
+    "text,expected",
+    [
+        ("출력해줘", True),
+        ("뽑아줘", True),
+        ("네", True),
+        ("응 출력해 주세요", True),
+        ("영수증 뽑아줘", True),
+        ("안 뽑아도 돼요", False),
+        ("필요 없어요", False),
+        ("아니요", False),
+        ("괜찮아요", False),
+        ("출력하지 않을게요", False),
+        ("영수증 출력하지 않을게요", False),
+    ],
+)
+def test_mock_receipt_choice_answers_without_the_word_receipt(text, expected):
+    from app.backends.mock import rule_based
+
+    assert rule_based(text, {"screen": "receipt_choice", "cart": []}) == {
+        "action": "set_receipt",
+        "print": expected,
+    }
