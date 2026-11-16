@@ -122,8 +122,15 @@ def rule_based(text: str, ctx: dict) -> dict:
     for key, method in _PAY:
         if key in t:
             return {"action": "start_payment", "method": method}
+    _NO_RECEIPT = r"안|않|아니|필요없|괜찮|말고|싫"
     if "영수증" in t:
-        return {"action": "set_receipt", "print": not re.search(r"안|필요없|괜찮", t)}
+        return {"action": "set_receipt", "print": not re.search(_NO_RECEIPT, t)}
+    # 영수증 선택 화면의 예/아니오 대답은 "영수증"이라는 말이 없어도 알아듣는다.
+    if ctx.get("screen") == "receipt_choice":
+        if re.search(_NO_RECEIPT, t):
+            return {"action": "set_receipt", "print": False}
+        if re.search(r"네|응|예|좋아|출력|뽑|인쇄|주세요|해줘", t):
+            return {"action": "set_receipt", "print": True}
     if "쿠폰" in t:
         return {"action": "open_coupon_list"}
     if re.search(r"적립|스탬프", t):
@@ -148,8 +155,9 @@ def rule_based(text: str, ctx: dict) -> dict:
         return {"action": "recommend_menu", "items": items, "confirmation_required": True}
     if "디저트" in t:
         return {"action": "show_category", "category": "DESSERT"}
+    # "차"는 "차가운" 같은 말과 섞이지 않도록 한글에 붙지 않은 단독 단어일 때만(조사는 허용).
     if re.search(r"논커피|커피말고|라떼|에이드|차종류|차메뉴", t) or re.search(
-	r"(?<![가-힣])차(?:[를은는도만로]|(?![가-힣]))", text
+        r"(?<![가-힣])차(?:[를은는도만로]|(?![가-힣]))", text
     ):
         return {"action": "show_category", "category": "NON_COFFEE"}
     if "커피" in t:
