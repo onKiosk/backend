@@ -20,7 +20,6 @@ ALIASES = [
     ("아이스티", "복숭아 아이스티"),
     ("케이크", "치즈케이크"),
     ("쿠키", "초코쿠키"),
-    ("라떼", "카페라떼"),
 ]
 _NAMES = sorted(MENUS, key=lambda n: -len(n.replace(" ", "")))
 _PAY = [
@@ -149,7 +148,9 @@ def rule_based(text: str, ctx: dict) -> dict:
         return {"action": "recommend_menu", "items": items, "confirmation_required": True}
     if "디저트" in t:
         return {"action": "show_category", "category": "DESSERT"}
-    if re.search(r"논커피|커피말고", t):
+    if re.search(r"논커피|커피말고|라떼|에이드|차종류|차메뉴", t) or re.search(
+	r"(?<![가-힣])차(?:[를은는도만로]|(?![가-힣]))", text
+    ):
         return {"action": "show_category", "category": "NON_COFFEE"}
     if "커피" in t:
         return {"action": "show_category", "category": "COFFEE"}

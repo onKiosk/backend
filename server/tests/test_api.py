@@ -164,7 +164,7 @@ def test_invalid_request_is_422(body):
     [
         ("따뜻한 카페모카 라지로 두 잔", {"action": "add_to_cart", "items": [{"menu": "카페모카", "quantity": 2, "temperature": "HOT", "size": "LARGE"}]}),
         ("아아 한 잔 주세요", {"action": "ask_clarification", "field": "size", "item": "아메리카노", "choices": ["REGULAR", "LARGE"]}),
-        ("라떼 주세요", {"action": "ask_clarification", "field": "temperature", "item": "카페라떼", "choices": ["HOT", "ICE"]}),
+        ("카페라떼 주세요", {"action": "ask_clarification", "field": "temperature", "item": "카페라떼", "choices": ["HOT", "ICE"]}),
         ("카카오페이로 할게요", {"action": "start_payment", "method": "KAKAO_PAY"}),
         ("콜드브루 주세요", {"action": "inform_sold_out", "item": "콜드브루", "alternatives": ["아메리카노", "카페라떼"]}),
         ("오늘 날씨 어때", {"action": "no_action", "reason": "NO_COMMAND"}),
@@ -204,3 +204,20 @@ def test_mock_order_intent_ignored_on_payment_screen():
     assert rule_based("결제할게요", {"screen": "payment", "cart": []})["action"] == "no_action"
     # 결제 수단을 말하면 기존처럼 결제 시작
     assert rule_based("카드로 결제할게요", {"screen": "cart", "cart": []})["action"] == "start_payment"
+
+
+@pytest.mark.parametrize("text", ["라떼 주세요", "라떼 메뉴 보여줘", "에이드 보여줘", "논커피 메뉴 보여줘"])
+def test_mock_noncoffee_words_show_category(text):
+    from app.backends.mock import rule_based
+
+    assert rule_based(text, {"screen": "menu", "cart": []}) == {
+        "action": "show_category",
+        "category": "NON_COFFEE",
+    }
+
+
+def test_mock_named_latte_still_orders():
+    from app.backends.mock import rule_based
+
+    assert rule_based("카페라떼 주세요", {"screen": "menu", "cart": []})["action"] == "ask_clarification"
+    assert rule_based("바닐라라떼 아이스 라지 주세요", {"screen": "menu", "cart": []})["action"] == "add_to_cart"
