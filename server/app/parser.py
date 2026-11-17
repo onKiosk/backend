@@ -7,6 +7,20 @@ from pydantic import ValidationError
 from .schemas import ACTION_ADAPTER, Action
 
 _FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.IGNORECASE)
+_CTRL_CHARS = re.compile(r"[\x00-\x1f]+")
+
+# 경량 NPU 모델이 간헐적으로 action 이름을 축약해 내는 경우를 정식 스키마 태그로 정규화한다.
+_ACTION_ALIASES = {
+    "ask": "ask_clarification",
+    "add": "add_to_cart",
+    "confirm": "confirm_order",
+    "remove": "remove_from_cart",
+    "modify": "modify_cart",
+    "reset": "reset_order",
+    "pay": "start_payment",
+    "sold_out": "inform_sold_out",
+    "receipt": "set_receipt",
+}
 
 
 class ParseError(Exception):
@@ -18,12 +32,16 @@ def extract_json(text: str) -> dict:
     start = cleaned.find("{")
     if start < 0:
         raise ParseError("JSON 객체를 찾지 못함")
+    candidate = _CTRL_CHARS.sub(" ", cleaned[start:])
     try:
-        obj, _ = json.JSONDecoder().raw_decode(cleaned[start:])
+        obj, _ = json.JSONDecoder(strict=False).raw_decode(candidate)
     except json.JSONDecodeError as e:
         raise ParseError(f"JSON 파싱 실패: {e.msg}") from e
     if not isinstance(obj, dict):
         raise ParseError("최상위가 객체가 아님")
+    act = obj.get("action")
+    if isinstance(act, str) and act in _ACTION_ALIASES:
+        obj["action"] = _ACTION_ALIASES[act]
     return obj
 
 

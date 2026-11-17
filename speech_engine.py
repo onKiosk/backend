@@ -297,8 +297,8 @@ class OnDeviceSpeechEngine:
             self._vad = sherpa_onnx.VoiceActivityDetector(
                 sherpa_onnx.VadModelConfig(
                     silero_vad=sherpa_onnx.SileroVadModelConfig(
-                        model=f["vad"], threshold=0.5, min_silence_duration=0.5,
-                        min_speech_duration=0.25, window_size=512),
+                        model=f["vad"], threshold=0.35, min_silence_duration=0.5,
+                        min_speech_duration=0.12, window_size=512),
                     sample_rate=STT_SAMPLE_RATE, num_threads=1),
                 buffer_size_in_seconds=MAX_AUDIO_SECONDS + 5)
             return (time.perf_counter() - t0) * 1000.0
@@ -320,7 +320,8 @@ class OnDeviceSpeechEngine:
             self._tts = sherpa_onnx.OfflineTts(sherpa_onnx.OfflineTtsConfig(
                 model=sherpa_onnx.OfflineTtsModelConfig(
                     vits=sherpa_onnx.OfflineTtsVitsModelConfig(
-                        model=f["model"], tokens=f["tokens"], data_dir=f["data_dir"]),
+                        model=f["model"], tokens=f["tokens"], data_dir=f["data_dir"],
+                        noise_scale=0.333, noise_scale_w=0.333),
                     num_threads=self.num_threads, provider="cpu")))
             return (time.perf_counter() - t0) * 1000.0
 
@@ -342,7 +343,7 @@ class OnDeviceSpeechEngine:
         self._vad.flush()
 
         spans: List[List[int]] = []
-        margin = int(0.15 * STT_SAMPLE_RATE)
+        margin = int(0.25 * STT_SAMPLE_RATE)
         while not self._vad.empty():
             seg = self._vad.front
             start = int(getattr(seg, "start", 0))
@@ -422,6 +423,11 @@ class OnDeviceSpeechEngine:
             segments = self._speech_segments(x16) if len(x16) >= 512 else []
             if segments:
                 voiced = np.concatenate(segments)
+            elif 0.15 <= audio_seconds <= 8.0 and float(np.abs(x16).max()) >= 0.06:
+                voiced = x16
+            else:
+                voiced = None
+            if voiced is not None and len(voiced) > 0:
                 buffers.append(voiced)
                 speech_seconds = len(voiced) / STT_SAMPLE_RATE
                 stream = self._recognizer.create_stream()
