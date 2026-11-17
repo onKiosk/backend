@@ -61,6 +61,15 @@ def test_normalize_stt_korean_fixes_splits_and_variants():
     assert speech_hooks.normalize_stt_korean("네모네이드 주세요.") == "레몬에이드 주세요."
     assert speech_hooks.normalize_stt_korean("나떼 주세요.") == "라떼 주세요."
     assert speech_hooks.normalize_stt_korean("아이 수로 주세요.") == "아이스로 주세요."
+    assert speech_hooks.normalize_stt_korean("샤추가!") == "샷 추가!"
+    assert speech_hooks.normalize_stt_korean("셔추가.") == "샷 추가."
+    assert speech_hooks.normalize_stt_korean("차추가!") == "샷 추가!"
+    assert speech_hooks.normalize_stt_korean("에스프레소 셔츠가.") == "에스프레소 샷 추가."
+    assert speech_hooks.normalize_stt_korean("에스프레소셔추가.") == "에스프레소 샷 추가."
+    assert speech_hooks.normalize_stt_korean("샤타나 추가.") == "샷 하나 추가."
+    assert speech_hooks.normalize_stt_korean("실업추.") == "시럽 추가."
+    assert speech_hooks.normalize_stt_korean("오토 우유로 변경.") == "오트 우유로 변경."
+    assert speech_hooks.normalize_stt_korean("우유변.") == "우유 변경."
 
 
 def test_parser_normalizes_action_aliases_and_control_chars():
